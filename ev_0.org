@@ -1,5 +1,4 @@
 #+title: Evaluation #0
-* Evaluation #0
 
 0. Which command should I use to display the exit code of the previous command?
 

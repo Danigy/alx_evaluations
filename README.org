@@ -1,4 +1,3 @@
 #+title: ALX Evaluations
-* ALX Evaluations
 
-[[Evaluation #0][./ev_0.org]]
+[[./ev_0.org][Evaluation #0]]
