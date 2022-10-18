@@ -1,10 +1,10 @@
 #+title: ALX Evaluations
 
-[[./ev_0.org][Evaluation #0]]
-[[./ev_1.org][Evaluation #1]]
-[[./ev_2.org][Evaluation #2]]
-[[./ev_3.org][Evaluation #3]]
-[[./ev_4.org][Evaluation #4]]
+- [[./ev_0.org][Evaluation #0]]
+- [[./ev_1.org][Evaluation #1]]
+- [[./ev_2.org][Evaluation #2]]
+- [[./ev_3.org][Evaluation #3]]
+- [[./ev_4.org][Evaluation #4]]
 
 ** License
 
