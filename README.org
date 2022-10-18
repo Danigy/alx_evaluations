@@ -1,4 +1,6 @@
-#+title: ALX Evaluations
+#+TITLE: ALX Evaluations
+#+AUTHOR: Mubarek Seid (MSD)
+#+DESCRIPTION: Questions and Answers for ALX Evaluations.
 
 - [[./ev_0.org][Evaluation #0]]
 - [[./ev_1.org][Evaluation #1]]
