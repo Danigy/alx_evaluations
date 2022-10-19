@@ -1,9 +1,268 @@
-#+title: Evaluation #0
+#+TITLE: EVALUATION #0
 
-0. Which command should I use to display the exit code of the previous command?
+* 0. Which command should I use to display the exit code of the previous command?
 
-- [ ] echo ?
-- [ ] echo $EXITCODE
-- [ ] echo $CODE
-- [X] echo $?
-- [ ] I don't know 
+- [ ] =echo ?=
+- [ ] =echo $EXITCODE=
+- [ ] =echo $CODE=
+- [X] =echo $?=
+
+* 1. What is the problem with the following C code?
+
+#+begin_src c :eval never-export
+  #include <stdio.h>
+
+  /**
+  * main - main function 
+  * Return: 0
+  */
+
+  int main(void)
+  {
+          int i;
+
+          i = 65;
+
+          while (i < 91)
+          {
+                  putchar(i);
+          }
+
+          return (0);
+  }
+#+end_src
+
+- [X] =i= is not incremented in the while loop, so an infinite loop occurs
+- [ ] =i= is not incremented outside the loop, so an infinite loop occurs
+- [ ] You cannot use integers in =putchar()=
+
+* 2. Which command should I use for changing a file owner?
+
+- [ ] =su=
+- [ ] =chmod=
+- [X] =chown=
+- [ ] =chgrp=
+
+* 3. What are the different steps to form an executable file from C source code?
+
+- [ ] Interpretation, compilation and assembly
+- [X] Preprocessing, compilation, assembly, and linking
+- [ ] Interpretation, assembly and compilation
+- [ ] Compilation and linking
+- [ ] Preprocessing and compilation
+
+* 4. What is the output of the following piece of code?
+
+#+begin_src c :eval never-export
+  int i;
+
+  i = 10;
+  while (i < 20)
+  {
+      printf("%d", i % 2);
+      i++;
+  }
+#+end_src
+
+- [X] 0101010101
+- [ ] 0123456789
+- [ ] 1010101010
+- [ ] I don't know
+#+end_src
+
+* 5. What shape will this code print?
+
+#+begin_src c :eval never-export
+  #include <stdio.h>
+
+  /**
+  * print_shape - function to print a shape
+  * /
+  void print_shape(int num1, int num2) 
+  {
+      int idx1, idx2;
+      for (idx1 = 0; idx1 < num1; idx1++)
+      {
+          for (idx2 = 0; idx2 < num2; idx2++)
+          {
+              printf('#');
+          }
+          printf('\n');
+      }
+  }
+
+  /** 
+  * main - calls print_shape()
+  *
+  * Return: Always 0.
+  **/
+
+  int main(void)
+  {
+      print_shape(4, 3);
+      return (0);
+  }
+#+end_src
+
+- [X] A rectangle with the character =#= with a height of 4 and width of 3
+- [ ] A rectangle with the character =#= with a height of 3 and width of 4
+- [ ] A triangle with the character =#= with a base of 4 and height of 3
+- [ ] A rectangle with the character =*= with a height of 4 and width of 3
+
+* 6. What command would you use to list files on Linux?
+
+- [X] ls
+- [ ] which
+- [ ] cd
+- [ ] pwd
+- [ ] list
+
+* 7. Which symbol should I use to redirect the error output to the standard output?
+
+- [X] 2>&1
+- [ ] 1>&2
+- [ ] 2>
+
+* 8. What is the numerical value for the =r-xr--r--= permission?
+
+- [ ] 522
+- [X] 544
+- [ ] 644
+- [ ] 411
+
+* 9. Which of these loop statements exist in C?
+
+Select all valid answers
+
+- [X] for
+- [X] while
+- [ ] foreach
+- [X] do...while
+- [ ] loop_to
+- [ ] each
+
+* 10. How do you change directory on Linux?
+
+- [ ] pwd
+- [X] cd
+- [ ] ls
+- [ ] which
+
+* 11. What is the size of the =float= data type on a 64-bit machine?
+
+- [ ] 1 byte
+- [ ] 2 bytes
+- [X] 4 bytes
+- [ ] 8 bytes
+
+* 12. What information do the =printf= statements tell us about how our code is executed?
+
+This code doesn't work as intended.
+
+#+begin_src c :eval never-export
+  #include "school.h"
+
+  /**
+  * main - prints even numbers from 0 to 100
+  * Return: 0
+  */
+
+  int main(void)
+  {
+          int i;
+
+          for (i = 0; i < 100; i++)
+          {
+                  if (i % 2 != 0)
+                  {
+                          continue;
+                  }
+                  else
+                  {
+                          break;
+                  }
+
+                  printf("%d\n", i);
+          }
+
+          return(0);
+  }
+#+end_src
+
+Let's add =printf= statements to the code.
+
+#+begin_src c :eval never-export
+  #include "school.h"
+
+  /**
+  * main - prints even numbers from 0 to 100
+  * Return: 0
+  */
+
+  int main(void)
+  {
+          int i;
+
+          printf("Before loop\n");
+
+          for (i = 0; i < 100; i++)
+          {
+                  if (i % 2 != 0)
+                  {
+                          printf("i is not even so don't print\n");
+                          continue;
+                  }
+                  else
+                  {
+                          printf("i is even, break to print\n");
+                          break;
+                  }
+
+                  printf("Outside of if/else, still inside for loop\n");
+
+                  printf("%d\n", i);
+          }
+
+          printf("For loop exited\n");
+
+          return(0);
+  }
+#+end_src
+
+What information do the =printf= statements tell us about how our code
+is executed? (select all valid statements)
+
+- [X] A =printf= statement shows when the for loop is finished
+- [ ] A =printf= statement shows exactly how many times the loop executes
+- [X] =printf= statements shows that break will cause "For loop exited" to print, indicating that the even number is never printed
+- [ ] A =printf= statement shows that there is an infinite loop in the code
+
+* 13. What does this code print?
+
+#+begin_src c :eval never-export
+  * print_something - function to print something
+  *
+  * Return: Always 0
+  **/
+  int print_something(int num)
+  {
+      int i, j;
+      for (i = 0; i < num + 1; i++)
+      {
+          for (j = 0; j < num + 1; j++)
+          {
+              printf("%d", i * j);
+              if (j < num)
+              {
+                  printf(", ");
+              }
+          }
+          printf("\n");
+      }
+      return (0);
+  }
+#+end_src
+
+- [X] The =n= times table, starting with 0
+- [ ] The =n= times table, excluding zero
+- [ ] The numbers 0 to =n=, =n= times
