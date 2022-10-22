@@ -127,7 +127,7 @@ valid answers):
   ...
 #+end_src
 
-- [ ] Yes
+- [X] Yes
 - [ ] No
 
 **** 8. What is =__repr__=?
