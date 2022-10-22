@@ -5,15 +5,15 @@
 #+KEYWORDS: alx, alx evaluation, c, python, shell, bash
 #+LANGUAGE: en
 
-- [[./ev_0.org][Evaluation #0]]
-- [[./ev_1.org][Evaluation #1]]
-- [[./ev_2.org][Evaluation #2]]
-- [[./ev_3.org][Evaluation #3]]
-- [[./ev_4.org][Evaluation #4]]
-- [[./ev_5.org][Evaluation #5]]
-- [[./ev_6.org][Evaluation #6]]
-- [[./ev_7.org][Evaluation #7]]
-- [[./ev_8.org][Evaluation #8]]
+- [[./evaluation_0.org][Evaluation #0]]
+- [[./evaluation_1.org][Evaluation #1]]
+- [[./evaluation_2.org][Evaluation #2]]
+- [[./evaluation_3.org][Evaluation #3]]
+- [[./evaluation_4.org][Evaluation #4]]
+- [[./evaluation_5.org][Evaluation #5]]
+- [[./evaluation_6.org][Evaluation #6]]
+- [[./evaluation_7.org][Evaluation #7]]
+- [[./evaluation_8.org][Evaluation #8]]
 
 ** License
 
