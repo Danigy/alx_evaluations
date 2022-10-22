@@ -67,18 +67,16 @@
 - [X] 0101010101
 - [ ] 0123456789
 - [ ] 1010101010
-- [ ] I don't know
-#+end_src
 
 * 5. What shape will this code print?
 
 #+begin_src c :eval never-export
   #include <stdio.h>
 
-  /**
-  * print_shape - function to print a shape
-  * /
-  void print_shape(int num1, int num2) 
+  /*
+  ,* print_shape - function to print a shape
+  ,* /
+  void print_shape(int num1, int num2)
   {
       int idx1, idx2;
       for (idx1 = 0; idx1 < num1; idx1++)
@@ -91,11 +89,11 @@
       }
   }
 
-  /** 
-  * main - calls print_shape()
-  *
-  * Return: Always 0.
-  **/
+  /**
+  ,* main - calls print_shape()
+  ,*
+  ,* Return: Always 0.
+  ,**/
 
   int main(void)
   {
