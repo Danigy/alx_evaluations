@@ -1,0 +1,200 @@
+#+TITLE: Evaluation #5
+
+**** What is the /Scho*l/ regexp matching?
+
+Select all valid answers
+
+- [ ] School
+- [ ] Schol
+- [ ] Scho.l
+- [ ] Schooool
+
+**** What does the macro TABLESIZE expand to?
+
+#+begin_src
+    #define BUFSIZE 1220
+    #define TABLESIZE BUFSIZE
+    #undef BUFSIZE
+    #define BUFSIZE 49
+#+end_src
+
+- [ ] 1220
+- [X] 49
+- [ ] nothing
+
+**** What is the time complexity of this function / algorithm?
+
+#+begin_src
+    void f(int n)
+    {
+        int i;
+        int j;
+        for (i = 0; i < n; i++)
+        {
+            if (i % 2 == 0)
+            {
+                for (j = 1; j < n; j = j * 2)
+                {
+                    printf("[%d] [%d]\n", i, j);
+                }
+            }
+            else
+            {
+                for (j = 0; j < n; j = j + 2)
+                {
+                    printf("[%d] [%d]\n", i, j);
+                }
+            }
+        }
+    }
+#+end_src
+
+- [ ] O(1)
+- [ ] O(n)
+- [ ] O(n!)
+- [X] O(n^2)
+- [ ] O(log(n))
+- [ ] O(nlog(n))
+- [ ] O(2^n)
+
+**** What is /etc/hosts ?
+
+- [X] A plain text file used to translate hostnames into IP addresses
+- [ ] A Python script used to translate hostnames into IP addresses
+- [ ] A plain text file used to translate IP addresses into hostnames
+- [ ] A plain text file used by other computers to know the name of your computer
+
+**** What is the time complexity of removing at index n in an unsorted array?
+
+- [ ] O(1)
+- [X] O(n)
+- [ ] O(n!)
+- [ ] O(n^2)
+- [ ] O(log(n))
+- [ ] O(nlog(n))
+- [ ] O(2^n)
+
+**** What is the OSI model?
+
+- [ ] Set of specifications that network hardware manufacturers must respect
+- [X] The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology
+- [ ] The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology
+
+**** What is the /Scho.l/ regexp matching?
+
+Select all valid answers
+
+- [ ] Scho.l
+- [ ] School
+- [ ] school
+
+**** What is a Makefile?
+
+- [X] file which defines a set of tasks to be executed
+- [ ] a command which makes a file to define a set of tasks to be executed
+- [ ] a file that makes a new shell window
+
+**** What are the layers of the OSI model?
+
+- [X] Physical, Data Link, Network, Transport, Session, Presentation, Application
+- [ ] Physical, Network, Transport, Presentation, Application
+- [ ] Application, Session, Information, Packets, TCP/UDP
+- [ ] Physical, Network, Transport, Session, Presentation, Application
+
+**** What is the time complexity of this function / algorithm?
+
+#+begin_src
+    void f(unsigned int n)
+    {
+        int i;
+        for (i = 1; i < n; i = i * 2)
+        {
+            printf("[%d]\n", i);
+        }
+    }
+#+end_src
+
+- [ ] O(1)
+- [ ] O(n)
+- [ ] O(n!)
+- [ ] O(n^2)
+- [X] O(log(n))
+- [ ] O(nlog(n))
+- [ ] O(2^n)
+
+**** What is localhost ?
+
+- [X] A hostname that refers to the current computer used to access it
+- [ ] An IP address for the current computer used to access it
+- [ ] A hostname that refers to all computers
+- [ ] An IP address meaning "all IPv4 addresses"
+
+**** What command displays information about active processes?
+
+- [X] ps
+- [ ] pgrep
+- [ ] pkill
+- [ ] kill
+- [ ] trap
+
+**** The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. Which command uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network?
+
+- [X] ping
+- [ ] nc
+- [ ] telnet
+- [ ] grep
+
+**** What command would you use to list files on Linux?
+
+- [X] ls
+- [ ] which
+- [ ] cd
+- [ ] pwd
+- [ ] list
+
+**** What is 0b001010010 in base10?
+
+- [ ] 81
+- [X] 82
+- [ ] 83
+- [ ] 84
+
+**** What command would you use to stop a process named dontstopmenow ?
+
+- [X] pkill -f dontstopmenow
+- [ ] kill -f dontstopmenow
+- [ ] kill dontstopmenow
+- [ ] pgrep -f dontstopmenow
+- [ ] I don't know
+
+**** Is this a standardized way to comment a function in Python?
+
+#+begin_src python
+    // Addition function
+    def add(a, b):
+        return a + b
+#+end_src
+
+- [X] No
+- [ ] Yes
+
+**** What is the /School/ regexp matching?
+
+Select all valid answers
+
+- [ ] scho0l
+- [X] School
+- [ ] school
+
+**** What do these lines print?
+
+#+begin_src python
+    >>> def my_function(counter=89):
+    >>>     print("Counter: {}".format(counter))
+    >>>
+    >>> my_function(12)
+#+end_src
+
+- [X] Counter: 12
+- [ ] Counter: 89
+- [ ] Counter: 101
