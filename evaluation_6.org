@@ -1,4 +1,4 @@
-#+#+TITLE: Evaluation #6
+#+TITLE: Evaluation #6
 
 **** Which of the following statements about what is causing the error is true? (select all valid answers)
 
