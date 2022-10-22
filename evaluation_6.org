@@ -1,0 +1,285 @@
+#+#+TITLE: Evaluation #6
+
+**** Which of the following statements about what is causing the error is true? (select all valid answers)
+
+The following code gives this incorrect output
+
+#+begin_src c
+    carrie@ubuntu:/debugging$ cat main.c
+    #include <stdioh>
+    /**
+    * main - debugging example
+    * Return: 0
+    */
+    int main(void)
+    {                                                                                                  
+        int i;                                                                                     
+        int j;                                                                                     
+
+        for (i = 0; i < 10; i++)                                                                   
+        {
+            j = 0;
+            while (j < 10)
+            {
+                printf("%d", j);
+            }
+            printf("\n");
+        }
+        return (0);
+    }
+    carrie@ubuntu:/debugging$
+    
+    carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic main.c
+    carrie@ubuntu:/debugging$ ./a.out
+    0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 <...>
+    ^Ccarrie@ubuntu:/debugging$
+#+end_src
+
+Which of the following statements about what is causing the error is true?
+
+- [ ] j is always equal to i so the loop will never end
+- [X] j never increments so it will always be less than 10
+- [X] j never increments so it is always going to print 0
+
+**** What is TCP/IP?
+
+- [ ] Transmission Control Protocol/Internet Protocol, is a suite of communications protocols used to interconnect network devices on the Internet or any private network.
+- [ ] Transmission Control Protocol/Internet Protocol, is a suite of communications protocols used to interconnect network devices on the Internet.
+- [ ] Transmission Control Protocol/Internet Protocol, is a suite of communications protocols used to interconnect network devices on private network.
+
+**** Given this code:
+
+#+begin_src c
+    struct point {
+        int x;
+        int y;
+    };
+    struct point my_point = { 3, 7 };
+    struct point *p = &my_point;
+#+end_src
+
+To set the member y of my variable my_point to 98, I can do (select all valid answers):
+
+- [X] my_point.y = 98;
+- [ ] my_point->y = 98;
+- [X] p.y = 98;
+- [ ] (*p).y = 98;
+- [X] p->y = 98;
+
+**** If we were to print the following tree using pre-order traversal, what would you expect the output to be?
+
+#+begin_src
+    Andrew, [10/1/2022 8:05 PM]
+    .-------(098)-------.
+      .--(012)--.         .--(402)-------.
+    (010)     (054)     (045)       .--(128)--.
+                                  (092)     (065)
+#+end_src
+
+- [ ] 98, 12, 10, 54, 402, 45, 128 ,92, 65
+- [ ] 98, 12, 402, 10, 54, 45, 128, 92, 65
+- [ ] 10, 12, 54, 98, 45, 402, 92, 128, 65
+- [ ] 10, 54, 12, 45, 92, 65, 128, 402, 98
+
+**** What do these lines print?
+
+#+begin_src python
+    >>> a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4], 'friends': [ { 'id': 82, 'name': "Bob" }, { 'id': 83, 'name': "Amy" } ] }
+    >>> a.get('friends')[-1].get("name")
+    89
+#+end_src
+
+- [ ] [{'id':82, 'name':"Bob"}, {'id':83, 'name': "Amy"}]
+- [X] 'Amy'
+- [ ] 'Bob'
+- [ ] Nothing
+
+**** You will not be able to reconnect to your server via SSH - and will not be able to recover it - if you ever deny port _____
+
+- [ ] 80
+- [X] 22
+- [ ] 440
+- [ ] 12
+
+**** What is the size of *p in this code?
+
+int **p;
+
+- [ ] 4 bytes
+- [ ] 8 bytes
+- [ ] 16 bytes
+- [ ] 32 bytes
+
+**** A firewall can monitor ________________ traffic.
+
+Please select all valid answers.
+
+- [X] Incoming
+- [ ] Outgoing
+- [ ] SQL Injections
+- [ ] CPU Usage
+
+**** In the context of web infrastrucutre, what is SPOF?
+
+- [ ] "Single Point of Failure" - A part of a system that will stop the entire system if it fails
+- [ ] "Single Point of Failure" - A part of the system designed to fail if other parameters are met
+- [ ] "Single Point of Freedom" - When your server is set up to only allow requests from a single specified IP address
+- [ ] "Spare Parts Order Form" - A form used to request backup hardware
+
+**** Which command grants or removes other users’ privileges in MySQL?
+
+- [ ] GRANT OPTION
+- [ ] SUDO
+- [ ] CHANGE OWNER
+- [ ] SWITCH
+
+**** An object-relational mapper (ORM) . . .
+
+Please select all valid answers
+
+- [ ] is a code library that automates the transfer of data stored in relational databases tables into objects
+- [ ] provides a high-level abstraction upon a relational database
+- [ ] allows a developer to write Python code instead of SQL
+
+**** What line(s) would you replace # REPLACE THIS LINE with in the following code?
+
+#+begin_src python
+    #!/usr/bin/env python3
+    """
+    Script that lists all State objects from a database
+    """
+    if name == "main":
+       # Import necessary modules
+        from sys import argv
+        from sqlalchemy import create_engine
+        from sqlalchemy.orm import sessionmaker
+        from model_state import State
+
+        # Set variables to input arguments
+        username = argv[1]
+        password = argv[2]
+        db_name = argv[3]
+
+        # Start engine
+        engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(username, password, db_name))
+
+        # Create a configured class Session
+        Session = sessionmaker(bind=engine)
+
+        # Create a Session instance
+        my_session = Session()
+
+        # my_session work
+        # REPLACE THIS LINE
+        for object in objects: 
+            print("{}: {}".format(object.id, object.name))
+
+        # Close session
+        my_session.close()
+#+end_src
+
+- [ ] objects = my_session.query(State).order_by(State.id).all()
+- [ ] my_session.execute("SELECT states.id, states.name FROM states ORDER BY id ASC")
+- [ ] objects = my_session.fetchall()
+- [ ] objects = my_session.find(State).order_by(State.id).all()
+
+**** What is in-order traversal?
+
+- [ ] the left subtree is visited first, then the root and later the right sub-tree
+- [ ] the root node is visited first, then the left subtree and finally the right subtree
+- [ ] left subtree is visited first, then the right subtree and finally the root node
+
+**** Based on this code, what should all the test cases be?
+
+#+begin_src python
+    def uniq(list):
+    """ Returns unique values of a list """
+        u_list = []
+        for item in list:
+            if item not in u_list:
+                u_list.append(item)
+        return u_list
+#+end_src
+
+Select all valid answers
+
+- [X] empty list
+- [ ] list with one element (any type)
+- [ ] list with 2 different elements (same type)
+- [ ] list with the same element twice (same type)
+- [ ] list with more than 2 times the same element (same type)
+- [ ] list with multiple types (integer, string, etc...)
+- [ ] not a list argument (ex: passing a dictionary to the method)
+
+**** Which command should I use to display the exit code of the previous command?
+
+- [ ] echo ?
+- [ ] echo $EXITCODE
+- [ ] echo $CODE
+- [ ] echo $?
+
+**** In this following code, what is password?
+
+#+begin_src python
+    class User:
+        id = 89
+        name = "no name"
+        __password = None
+        
+        def __init(self, new_name=None):
+            self.is_new = True
+            if new_name is not None:
+                self.name = new_name
+#+end_src
+
+- [ ] A private class attribute
+- [ ] A private instance attribute
+- [ ] A protected instance attribute
+- [ ] A protected class attribute
+- [ ] A public instance attribute
+- [ ] A public class attribute
+
+**** What do these lines print?
+
+#+begin_src python
+    class Base():
+    """ My base class """
+    
+        nb_instances = 0
+        
+        def __init(self):
+            Base.nb_instances += 1
+            self.id = Base.__nb_instances
+            
+    class User(Base):
+    """ My User class """
+        def __init(self):
+            super().init()
+            self.id += 99
+    
+    u = User()
+    print(u.id)
+#+end_src
+
+- [ ] 1
+- [ ] 99
+- [X] 100
+
+**** What is a server?
+
+- [ ] A server is a device, a virtual device or computer program or providing functionality for other programs or devices, called “clients”.
+- [ ] A server is a software that serves web pages.
+- [ ] A server is returning information to other computers when asked.
+
+**** Which MySQL command enables a user to delete tables or databases?
+
+- [X] DROP
+- [ ] DELETE
+- [ ] REMOVE
+- [ ] KILL
+
+**** What is a database?
+
+- [ ] a collection of text files that are stored so that it can be easily accessed, updated and managed by the local application
+- [ ] a collection of information that is stored on a physical server and organized so that it can be easily accessed, updated and managed
+- [X] a collection of information that is stored and organized so that it can be easily accessed, updated and managed
