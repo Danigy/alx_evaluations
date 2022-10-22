@@ -1,0 +1,231 @@
+#+TITLE: Evaluation #0
+**** 0. This =void (*anjula[])(int, float)= is:
+
+- [ ] A pointer to a function that takes an =int= and a =float= as
+  parameters and returns nothing
+- [ ] A pointer to a function that takes an array of =int= and =float= as a
+  parameter and returns nothing
+- [ ] A pointer to a function that takes an =int= and a =float= as
+  parameters and returns an empty array
+- [X] An array of pointers to functions that take an =int= and a =float= as
+  parameters and returns nothing
+- [ ] A pointer to an array of functions that take an =int= and a =float= as
+  parameters and returns nothing
+
+**** 1. What command(s) can be used to list the symbols stored in a
+
+Select all valid answers
+
+- [X] =nm=
+- [ ] =ranlib=
+- [X] =ar=
+- [ ] =ld=
+
+**** 2. What is the size of a pointer to an =int= (on a 64-bit architecture)
+
+- [ ] 1 byte
+- [ ] 2 bytes
+- [ ] 4 bytes
+- [X] 8 bytes
+
+**** 3. What does this code print?
+
+#+begin_src c
+  void print(int nb)
+  {
+      printf("%d", nb);
+      -- nb;
+      if (nb > 0) 
+      {
+          print(nb);
+      }
+  }
+
+  int main(void)
+  {
+      print(4);
+      return (0);
+  }
+#+end_src
+
+- [X] 4321
+- [ ] 43210
+- [ ] 321
+- [ ] 3210
+
+**** 4. Given this code:
+
+#+begin_src c
+  struct point {
+     int x;
+     int y;
+  };
+  struct point my_point = { 3, 7 };
+  struct point *p = &my_point;
+#+end_src
+
+To set the member =y= of my variable =my_point= to =98=, I can do
+(select all valid answers):
+
+- [X] =my_point.y = 98;=
+- [ ] =my_point->y = 98;=
+- [ ] =p.y = 98;=
+- [X] =(*p).y = 98;=
+- [X] =p->y = 98;=
+
+**** 5. How much space would you need to allocate for a list node with the following structure on a 64-bit machine?
+
+#+begin_src c
+  /**
+   * struct list_s - singly linked list
+   * @str: string - (malloc'ed string)
+   * @len: length of the string
+   * @next: points to the next node
+   *
+   * Description: singly linked list node structure
+   * for your project
+   */
+  typedef struct list_s
+  {
+      char *str;
+      unsigned int len;
+      struct list_s *next;
+  } list_t;
+#+end_src
+
+- [X] 20 bytes
+- [ ] It's impossible to know without knowing what =str= is
+- [ ] 24 bytes
+- [ ] 32 bytes
+
+**** 6. What is the result of =12 % 3=?
+
+- [X] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+
+**** 7. How many bytes will this statement allocate on a 64-bit machine?
+
+=malloc(sizeof(int) * 4)=
+
+- [ ] 4
+- [ ] 8
+- [X] 16
+- [ ] 32
+
+**** 8. The memory space reserved when calling =malloc= is on:
+
+- [X] The heap
+- [ ] The stack
+
+**** 9. What is the value of =n= after the following code is executed?
+
+#+begin_src c
+  int n = 98;
+  int *p = &n;
+
+  *p++;
+#+end_src
+
+- [ ] 0
+- [X] 98
+- [ ] 99
+- [ ] 402
+
+**** 10. Are there any memory leaks with the following code (on a 64-bit architecture)?
+
+#+begin_src c
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  /**                                                                             
+   * struct list_s - singly linked list                                           
+   * @str: string - (malloc'ed string)                                            
+   * @len: length of the string                                                   
+   * @next: points to the next node                                               
+   *                                                                              
+   * Description: singly linked list node structure                               
+   * for your project                                                        
+   */
+  typedef struct list_s
+  {
+          char *str;
+          unsigned int len;
+          struct list_s *next;
+  } list_t;
+
+  int main(void)
+  {
+          list_t *node = NULL;
+          node = malloc(sizeof(list_t));
+
+          node->len = 3;
+
+          node->str = malloc(sizeof(char) * node->len);
+          node->str[0] = 'H';
+          node->str[1] = 'i';
+          node->str[2] = '\0';
+
+          node->next = NULL;
+
+          free(node);
+
+          return (0);
+  }
+#+end_src
+
+- [X] Yes, 3 bytes of memory were lost
+- [ ] No, no memory leaks were possible
+- [ ] Yes, 24 bytes of memory were lost
+- [ ] Yes, 15 bytes of memory were lost
+
+**** 11. What is wrong with the following code?
+
+#+begin_src c
+  int n = 5;
+  int array[5];
+  int i = 3;
+
+  array[n] = i;
+#+end_src
+
+- [ ] Nothing is wrong
+- [ ] It is impossible to declare the variable =array= this way
+- [ ] The array =array= is not entirely initialized
+- [X] While it is possible to access =array[n]=, we are not supposed to as
+  this is not the array anymore
+
+**** 12. What is the size of =*p= in this code on a 64-bit machine?
+
+#+begin_src c
+  int **p;
+#+end_src
+
+- [ ] 4 bytes
+- [X] 8 bytes
+- [ ] 16 bytes
+
+**** 13. What does the macro =TABLESIZE= expand to?
+
+#+begin_src c
+  #define BUFSIZE 1020
+  #define TABLESIZE BUFSIZE
+  #undef BUFSIZE
+  #define BUFSIZE 37
+#+end_src
+
+- [ ] 1020
+- [X] 37
+- [ ] nothing
+
+**** 14. How many bytes will this statement allocate on a 64-bit
+machine?
+
+=malloc(sizeof(char) * 10)=
+
+- [X] 10
+- [ ] 20
+- [ ] 40
+- [ ] 80
