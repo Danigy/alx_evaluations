@@ -1,13 +1,13 @@
 #+TITLE: Evaluation #0
 
-**** 0. Which command should I use to display the exit code of the previous command?
+**** Which command should I use to display the exit code of the previous command?
 
 - [ ] =echo ?=
 - [ ] =echo $EXITCODE=
 - [ ] =echo $CODE=
 - [X] =echo $?=
 
-**** 1. What is the problem with the following C code?
+**** What is the problem with the following C code?
 
 #+begin_src c
   #include <stdio.h>
@@ -36,14 +36,14 @@
 - [ ] =i= is not incremented outside the loop, so an infinite loop occurs
 - [ ] You cannot use integers in =putchar()=
 
-**** 2. Which command should I use for changing a file owner?
+**** Which command should I use for changing a file owner?
 
 - [ ] =su=
 - [ ] =chmod=
 - [X] =chown=
 - [ ] =chgrp=
 
-**** 3. What are the different steps to form an executable file from C source code?
+**** What are the different steps to form an executable file from C source code?
 
 - [ ] Interpretation, compilation and assembly
 - [X] Preprocessing, compilation, assembly, and linking
@@ -51,7 +51,7 @@
 - [ ] Compilation and linking
 - [ ] Preprocessing and compilation
 
-**** 4. What is the output of the following piece of code?
+**** What is the output of the following piece of code?
 
 #+begin_src c
   int i;
@@ -68,7 +68,7 @@
 - [ ] 0123456789
 - [ ] 1010101010
 
-**** 5. What shape will this code print?
+**** What shape will this code print?
 
 #+begin_src c
   #include <stdio.h>
@@ -107,7 +107,7 @@
 - [ ] A triangle with the character =#= with a base of 4 and height of 3
 - [ ] A rectangle with the character =*= with a height of 4 and width of 3
 
-**** 6. What command would you use to list files on Linux?
+**** What command would you use to list files on Linux?
 
 - [X] ls
 - [ ] which
@@ -115,20 +115,20 @@
 - [ ] pwd
 - [ ] list
 
-**** 7. Which symbol should I use to redirect the error output to the standard output?
+**** Which symbol should I use to redirect the error output to the standard output?
 
 - [X] 2>&1
 - [ ] 1>&2
 - [ ] 2>
 
-**** 8. What is the numerical value for the =r-xr--r--= permission?
+**** What is the numerical value for the =r-xr--r--= permission?
 
 - [ ] 522
 - [X] 544
 - [ ] 644
 - [ ] 411
 
-**** 9. Which of these loop statements exist in C?
+**** Which of these loop statements exist in C?
 
 Select all valid answers
 
@@ -139,21 +139,21 @@ Select all valid answers
 - [ ] loop_to
 - [ ] each
 
-**** 10. How do you change directory on Linux?
+**** How do you change directory on Linux?
 
 - [ ] pwd
 - [X] cd
 - [ ] ls
 - [ ] which
 
-**** 11. What is the size of the =float= data type on a 64-bit machine?
+**** What is the size of the =float= data type on a 64-bit machine?
 
 - [ ] 1 byte
 - [ ] 2 bytes
 - [X] 4 bytes
 - [ ] 8 bytes
 
-**** 12. What information do the =printf= statements tell us about how our code is executed?
+**** What information do the =printf= statements tell us about how our code is executed?
 
 This code doesn't work as intended.
 
@@ -236,7 +236,7 @@ is executed? (select all valid statements)
   print, indicating that the even number is never printed
 - [ ] A =printf= statement shows that there is an infinite loop in the code
 
-**** 13. What does this code print?
+**** What does this code print?
 
 #+begin_src c
   * print_something - function to print something

@@ -1,13 +1,13 @@
 #+TITLE: Evaluation #3
 
-**** 0. In a doubly linked list, what are possible directions to traverse it?
+**** In a doubly linked list, what are possible directions to traverse it?
 
 (select all possible answers)
 
 - [X] Forward
 - [X] Backward
 
-**** 1. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   >>> a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4], 'friends': [ { 'id': 82, 'name': "Bob" }, { 'id': 83, 'name': "Amy" } ] }
@@ -20,7 +20,7 @@
 - [ ] 'Bob'
 - [ ] Nothing
 
-**** 2. What does this print?
+**** What does this print?
 
 #+begin_src python
   >>> a = "Python is cool"
@@ -33,13 +33,13 @@
 - [ ] si
 - [X] is
 
-**** 3. What is a circular import in Python?
+**** What is a circular import in Python?
 
 - [X] When two or more modules are dependant on each other.
 - [ ] When you import a module for calculating dimensions for circles.
 - [ ] When one module imports multiple other modules.
 
-**** 4. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   a = 12
@@ -56,7 +56,7 @@
 - [ ] C is fun
 - [ ] School
 
-**** 5. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   for i in range(2, 10, 2):
@@ -68,7 +68,7 @@
 - [ ] 4 6 8 10 12 14 16 18
 - [X] 2 4 6 8
 
-**** 6. What does this print?
+**** What does this print?
 
 #+begin_src python
   >>> print("{:d} Mission street, {}".format(972, "San Francisco"))
@@ -79,18 +79,18 @@
 - [X] 972 Mission street, San Francisco
 - [ ] San Francisco Mission street, 972
 
-**** 7. Which symbol should I use to redirect the error output to the standard output?
+**** Which symbol should I use to redirect the error output to the standard output?
 
 - [X] 2>&1
 - [ ] 1>&2
 - [ ] 2>
 
-**** 8. In a doubly linked list, what's the “head” of a linked list?
+**** In a doubly linked list, what's the “head” of a linked list?
 
 - [ ] It's the node with the pointer to the next node equals to =NULL=
 - [X] It's the node with the pointer to the previous node equals to =NULL=
 
-**** 9. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   >>> def my_function(counter=89):
@@ -103,7 +103,7 @@
 - [ ] Counter: 89
 - [ ] Counter: 101
 
-**** 10. How many bytes will this statement allocate on a 64 bit machine?
+**** How many bytes will this statement allocate on a 64 bit machine?
 
 =malloc(sizeof(char) * 4)=
 
@@ -112,7 +112,7 @@
 - [ ] 12
 - [ ] 16
 
-**** 11. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   >>> a = [1, 2, 3, 4]
@@ -125,14 +125,14 @@
 - [X] [1, 2, 10, 4]
 - [ ] [1, 2, 10, 10]
 
-**** 12. You're standing in line at a grocery store, which data type best represents this situation?
+**** You're standing in line at a grocery store, which data type best represents this situation?
 
 - [X] Queue
 - [ ] Array
 - [ ] Dictionary
 - [ ] Stack
 
-**** 13. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   >>> def my_function(counter=89):
@@ -146,20 +146,20 @@
 - [X] 90
 - [ ] 891
 
-**** 14. Which line of code will create a list of every other number from 0 to 10 in reverse in Python?
+**** Which line of code will create a list of every other number from 0 to 10 in reverse in Python?
 
 - [X] list(range(10, 0, -2))
 - [ ] array(range(10, 0, -2))
 - [ ] list(range(0, 10, -2))
 - [ ] array(10, 0, 2))
 
-**** 15. What is the =unistd= symbolic constant for the standard output?
+**** What is the =unistd= symbolic constant for the standard output?
 
 - [ ] STDIN_FILENO
 - [X] STDOUT_FILENO
 - [ ] STDERR_FIELNO
 
-**** 16. What's wrong with the following C code to get the nth node of a linked list?
+**** What's wrong with the following C code to get the nth node of a linked list?
 
 Select all correct answers.
 

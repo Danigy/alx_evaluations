@@ -1,5 +1,5 @@
 #+TITLE: Evaluation #1
-**** 0. This =void (*anjula[])(int, float)= is:
+**** This =void (*anjula[])(int, float)= is:
 
 - [ ] A pointer to a function that takes an =int= and a =float= as
   parameters and returns nothing
@@ -12,7 +12,7 @@
 - [ ] A pointer to an array of functions that take an =int= and a =float= as
   parameters and returns nothing
 
-**** 1. What command(s) can be used to list the symbols stored in a
+**** What command(s) can be used to list the symbols stored in a
 
 Select all valid answers
 
@@ -21,14 +21,14 @@ Select all valid answers
 - [X] =ar=
 - [ ] =ld=
 
-**** 2. What is the size of a pointer to an =int= (on a 64-bit architecture)
+**** What is the size of a pointer to an =int= (on a 64-bit architecture)
 
 - [ ] 1 byte
 - [ ] 2 bytes
 - [ ] 4 bytes
 - [X] 8 bytes
 
-**** 3. What does this code print?
+**** What does this code print?
 
 #+begin_src c
   void print(int nb)
@@ -53,7 +53,7 @@ Select all valid answers
 - [ ] 321
 - [ ] 3210
 
-**** 4. Given this code:
+**** Given this code:
 
 #+begin_src c
   struct point {
@@ -73,7 +73,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [X] =(*p).y = 98;=
 - [X] =p->y = 98;=
 
-**** 5. How much space would you need to allocate for a list node with the following structure on a 64-bit machine?
+**** How much space would you need to allocate for a list node with the following structure on a 64-bit machine?
 
 #+begin_src c
   /**
@@ -98,7 +98,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [ ] 24 bytes
 - [ ] 32 bytes
 
-**** 6. What is the result of =12 % 3=?
+**** What is the result of =12 % 3=?
 
 - [X] 0
 - [ ] 1
@@ -106,7 +106,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [ ] 3
 - [ ] 4
 
-**** 7. How many bytes will this statement allocate on a 64-bit machine?
+**** How many bytes will this statement allocate on a 64-bit machine?
 
 =malloc(sizeof(int) * 4)=
 
@@ -115,12 +115,12 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [X] 16
 - [ ] 32
 
-**** 8. The memory space reserved when calling =malloc= is on:
+**** The memory space reserved when calling =malloc= is on:
 
 - [X] The heap
 - [ ] The stack
 
-**** 9. What is the value of =n= after the following code is executed?
+**** What is the value of =n= after the following code is executed?
 
 #+begin_src c
   int n = 98;
@@ -134,7 +134,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [ ] 99
 - [ ] 402
 
-**** 10. Are there any memory leaks with the following code (on a 64-bit architecture)?
+**** Are there any memory leaks with the following code (on a 64-bit architecture)?
 
 #+begin_src c
   #include <stdio.h>
@@ -181,7 +181,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [ ] Yes, 24 bytes of memory were lost
 - [ ] Yes, 15 bytes of memory were lost
 
-**** 11. What is wrong with the following code?
+**** What is wrong with the following code?
 
 #+begin_src c
   int n = 5;
@@ -197,7 +197,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [X] While it is possible to access =array[n]=, we are not supposed to as
   this is not the array anymore
 
-**** 12. What is the size of =*p= in this code on a 64-bit machine?
+**** What is the size of =*p= in this code on a 64-bit machine?
 
 #+begin_src c
   int **p;
@@ -207,7 +207,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [X] 8 bytes
 - [ ] 16 bytes
 
-**** 13. What does the macro =TABLESIZE= expand to?
+**** What does the macro =TABLESIZE= expand to?
 
 #+begin_src c
   #define BUFSIZE 1020
@@ -220,7 +220,7 @@ To set the member =y= of my variable =my_point= to =98=, I can do
 - [X] 37
 - [ ] nothing
 
-**** 14. How many bytes will this statement allocate on a 64-bit
+**** How many bytes will this statement allocate on a 64-bit
 machine?
 
 =malloc(sizeof(char) * 10)=

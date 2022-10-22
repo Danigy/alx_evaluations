@@ -1,18 +1,18 @@
 #+TITLE: Evaluation #2
 
-**** 0. What is the =unistd= symbolic constant for the standard input?
+**** What is the =unistd= symbolic constant for the standard input?
 
 - [X] STDIN_FILENO
 - [ ] STDOUT_FILENO
 - [ ] STDERR_FILENO
 
-**** 1. =~ 0x98 == ?
+**** =~ 0x98 == ?
 
 - [ ] =0x66=
 - [X] =0x67=
 - [ ] =0x68=
 
-**** 2. Choose the line of code to replace the comment below so the function prints a given string without a lower or uppercase =c=.
+**** Choose the line of code to replace the comment below so the function prints a given string without a lower or uppercase =c=.
 
 #+begin_src python
   >>>def no_c_print(s):
@@ -30,7 +30,7 @@
 - [X] =if character != 'c' and character != 'C':=
 - [ ] =if character != "cC"=
 
-**** 3. In the =main.c= file, on what line is the first error that the compiler returns?
+**** In the =main.c= file, on what line is the first error that the compiler returns?
 
 Look at the following code.
 
@@ -77,14 +77,14 @@ Look at the following code.
 - [X] 11
 - [ ] 7
 
-**** 4. What is=0b001010010= in base10?
+**** What is=0b001010010= in base10?
 
 - [ ] 81
 - [X] 82
 - [ ] 83
 - [ ] 84
 
-**** 5. What does this command line print?
+**** What does this command line print?
 
 #+begin_src python
   >>> a = "Hello, world!"
@@ -95,7 +95,7 @@ Look at the following code.
 - [ ] world!
 - [ ] orld!
 
-**** 6. What is wrong with the following code?
+**** What is wrong with the following code?
 
 #+begin_src
   int n = 0;
@@ -110,7 +110,7 @@ Look at the following code.
 - [ ] The array =array= is not entirely initialized
 - [ ] It is not possible to access =array[n]=
 
-**** 7. What is =98= in base 16?
+**** What is =98= in base 16?
 
 - [X] =0x62=
 - [ ] =0x98=
@@ -126,7 +126,7 @@ Look at the following code.
 - [ ] My favorite line of T is 1.
 - [ ] My favorite line of The Zen of Python is 1.
 
-**** 9. What are the different steps to form an executable file from C source code?
+**** What are the different steps to form an executable file from C source code?
 
 - [ ] Interpretation, compilation and assembly
 - [X] Preprocessing, compilation, assembly, and linking
@@ -134,7 +134,7 @@ Look at the following code.
 - [ ] Compilation and linking
 - [ ] Preprocessing and compilation
 
-**** 10. The following code gives this incorrect output.
+**** The following code gives this incorrect output.
 
 Which of the following statements about what is causing the error is
 true? (select all valid answers)
@@ -178,19 +178,19 @@ true? (select all valid answers)
 - [ ] =j= is always equal to =i= so the loop will never end
 - [X] =j= never increments so it is always going to print =0=
 
-**** 11. =0x13 << 1= = ?
+**** =0x13 << 1= = ?
 
 - [ ] 0x13
 - [ ] 0x12
 - [X] 0x26
 - [ ] 0x4C
 
-**** 12. When I am using =O_WRONLY | O_CREAT | O_APPEND= -> the =|= are bitwise operators.
+**** When I am using =O_WRONLY | O_CREAT | O_APPEND= -> the =|= are bitwise operators.
 
 - [X] True
 - [ ] False
 
-**** 13. Choose a statement that would complete the function that returns a string made up of =+= =n= number of times (assuming =n= > 0) .
+**** Choose a statement that would complete the function that returns a string made up of =+= =n= number of times (assuming =n= > 0) .
 *Score*: 0.5
 
 #+begin_src python
@@ -208,7 +208,7 @@ true? (select all valid answers)
 - [ ] =return ''+n=
 - [ ] =return==+n+n+n=
 
-**** 14. Without context, on Ubuntu 14.04 LTS, =write= is a(n) ...
+**** Without context, on Ubuntu 14.04 LTS, =write= is a(n) ...
 
 (please select all correct answers)
 
@@ -217,7 +217,7 @@ true? (select all valid answers)
 - [ ] library call
 - [ ] game
 
-**** 15. What is the correct combination of =oflags= used to open a file with the mode write only, create it if it doesn't exist and append new content at the end if it already exists?
+**** What is the correct combination of =oflags= used to open a file with the mode write only, create it if it doesn't exist and append new content at the end if it already exists?
 
 - [ ] =O_WRONLY=
 - [ ] =O_WRONLY | O_CREAT | O_EXCL=

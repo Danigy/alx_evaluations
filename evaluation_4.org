@@ -1,6 +1,6 @@
 #+TITLE: Evaluation #4
 
-**** 0. Given this code:
+**** Given this code:
 
 #+begin_src c
   struct point {
@@ -20,7 +20,7 @@ valid answers):
 - [X] =(*p).y = 98=
 - [X] =p->y = 98=
 
-**** 1. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   class Base():
@@ -47,21 +47,21 @@ valid answers):
 - [X] 100
 - [ ] 1
 
-**** 2. In a singly linked list, what are possible directions to traverse it?
+**** In a singly linked list, what are possible directions to traverse it?
 
 (select all possible answers)
 
 - [X] Forward
 - [ ] Backward
 
-**** 3. What is the size of the =int= data type on a 64-bit machine?
+**** What is the size of the =int= data type on a 64-bit machine?
 
 - [ ] 1 byte
 - [ ] 2 bytes
 - [X] 4 bytes
 - [ ] 8 bytes
 
-**** 4. Based on this code, what should all the test cases be?
+**** Based on this code, what should all the test cases be?
 
 (select all possible answers)
 
@@ -83,13 +83,13 @@ valid answers):
 - [X] list with multiple types (integer, string, etc...)
 - [X] not a list argument (ex: passing a dictionary to the method)
 
-**** 5. What is the =unistd= symbolic constant for the standard error?
+**** What is the =unistd= symbolic constant for the standard error?
 
 - [ ] STDIN_FILENO
 - [ ] STDOUT_FILENO
 - [X] STDERR_FILENO
 
-**** 6. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   class Base():
@@ -116,7 +116,7 @@ valid answers):
 - [ ] 90
 - [ ] 1
 
-**** 7. Is this module correctly documented?
+**** Is this module correctly documented?
 
 #+begin_src python
   #!/usr/bin/python3
@@ -130,7 +130,7 @@ valid answers):
 - [X] Yes
 - [ ] No
 
-**** 8. What is =__repr__=?
+**** What is =__repr__=?
 
 - [ ] Instance method that prints an "official" string representation of an
   instance
@@ -139,7 +139,7 @@ valid answers):
 - [ ] Instance method that returns the dictionary representation of an
   instance
 
-**** 9. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   class User:
@@ -155,7 +155,7 @@ valid answers):
 - [ ] 89
 - [X] 98
 
-**** 10. Is this a standardized way to comment a function in Python?
+**** Is this a standardized way to comment a function in Python?
 
 #+begin_src python
   /* Addition function */
@@ -166,21 +166,21 @@ valid answers):
 - [X] No
 - [ ] Yes
 
-**** 11. Bubble Sort is a _______________.
+**** Bubble Sort is a _______________.
 
 - [X] simple comparison sorting algorithm
 - [ ] complex comparison sorting algorithm
 - [ ] simple non-comparison searching algorithm
 - [ ] simple non-comparison sorting algorithm
 
-**** 12. Which of the following sorting algorithms has best case time complexity of =O(nlog(n))=?
+**** Which of the following sorting algorithms has best case time complexity of =O(nlog(n))=?
 
 - [X] Quick Sort
 - [ ] Bubble Sort
 - [ ] Insertion Sort
 - [ ] Selection Sort
 
-**** 13. In this following code, what is=__password=?
+**** In this following code, what is=__password=?
 
 #+begin_src python
   class User:
@@ -201,14 +201,14 @@ valid answers):
 - [X] A private class attribute
 - [ ] A private instance attribute
 
-**** 14. What data structure is the foundation of a Python dictionary or set?
+**** What data structure is the foundation of a Python dictionary or set?
 
 - [X] Hash Table
 - [ ] Stack
 - [ ] Queue
 - [ ] Binary Tree
 
-**** 15. What does the following Bash script do?
+**** What does the following Bash script do?
 
 #+begin_src bash
   #!/usr/bin/env bash                                                             
@@ -236,7 +236,7 @@ valid answers):
   if it's a directory, print "School".
 - [ ] Checks if =Tech= exists and prints "Tech exists"
 
-**** 16. What do these lines print?
+**** What do these lines print?
 
 #+begin_src python
   >>> class User:
@@ -258,7 +258,7 @@ valid answers):
 - [ ] 'John'
 - [X] 'no name'
 
-**** 17. What is =__doc__=?
+**** What is =__doc__=?
 
 - [X] The string documentation of an object (based on docstring)
 - [ ] Prints the documentation of an object
