@@ -13,7 +13,7 @@
 - [[./ev_5.org][Evaluation #5]]
 - [[./ev_6.org][Evaluation #6]]
 - [[./ev_7.org][Evaluation #7]]
-- [[.ev_8.org][Evaluation #8]]
+- [[./ev_8.org][Evaluation #8]]
 
 ** License
 
