@@ -2,10 +2,10 @@
 
 **** 0. Which command should I use to display the exit code of the previous command?
 
-- =echo ?=
-- =echo $EXITCODE=
-- =echo $CODE=
-- =echo $?=
+- [ ] =echo ?=
+- [ ] =echo $EXITCODE=
+- [ ] =echo $CODE=
+- [X] =echo $?=
 
 **** 1. What is the problem with the following C code?
 
@@ -32,24 +32,24 @@
   }
 #+end_src
 
-- =i= is not incremented in the while loop, so an infinite loop occurs
-- =i= is not incremented outside the loop, so an infinite loop occurs
-- You cannot use integers in =putchar()=
+- [X] =i= is not incremented in the while loop, so an infinite loop occurs
+- [ ] =i= is not incremented outside the loop, so an infinite loop occurs
+- [ ] You cannot use integers in =putchar()=
 
 **** 2. Which command should I use for changing a file owner?
 
-- =su=
-- =chmod=
-- =chown=
-- =chgrp=
+- [ ] =su=
+- [ ] =chmod=
+- [X] =chown=
+- [ ] =chgrp=
 
 **** 3. What are the different steps to form an executable file from C source code?
 
-- Interpretation, compilation and assembly
-- Preprocessing, compilation, assembly, and linking
-- Interpretation, assembly and compilation
-- Compilation and linking
-- Preprocessing and compilation
+- [ ] Interpretation, compilation and assembly
+- [X] Preprocessing, compilation, assembly, and linking
+- [ ] Interpretation, assembly and compilation
+- [ ] Compilation and linking
+- [ ] Preprocessing and compilation
 
 **** 4. What is the output of the following piece of code?
 
@@ -64,9 +64,9 @@
   }
 #+end_src
 
-- 0101010101
-- 0123456789
-- 1010101010
+- [X] 0101010101
+- [ ] 0123456789
+- [ ] 1010101010
 
 **** 5. What shape will this code print?
 
@@ -102,56 +102,56 @@
   }
 #+end_src
 
-- A rectangle with the character =#= with a height of 4 and width of 3
-- A rectangle with the character =#= with a height of 3 and width of 4
-- A triangle with the character =#= with a base of 4 and height of 3
-- A rectangle with the character =*= with a height of 4 and width of 3
+- [X] A rectangle with the character =#= with a height of 4 and width of 3
+- [ ] A rectangle with the character =#= with a height of 3 and width of 4
+- [ ] A triangle with the character =#= with a base of 4 and height of 3
+- [ ] A rectangle with the character =*= with a height of 4 and width of 3
 
 **** 6. What command would you use to list files on Linux?
 
-- ls
-- which
-- cd
-- pwd
-- list
+- [X] ls
+- [ ] which
+- [ ] cd
+- [ ] pwd
+- [ ] list
 
 **** 7. Which symbol should I use to redirect the error output to the standard output?
 
-- 2>&1
-- 1>&2
-- 2>
+- [X] 2>&1
+- [ ] 1>&2
+- [ ] 2>
 
 **** 8. What is the numerical value for the =r-xr--r--= permission?
 
-- 522
-- 544
-- 644
-- 411
+- [ ] 522
+- [X] 544
+- [ ] 644
+- [ ] 411
 
 **** 9. Which of these loop statements exist in C?
 
 Select all valid answers
 
-- for
-- while
-- foreach
-- do...while
-- loop_to
-- each
+- [X] for
+- [X] while
+- [ ] foreach
+- [X] do...while
+- [ ] loop_to
+- [ ] each
 
 **** 10. How do you change directory on Linux?
 
-- pwd
-- cd
-- ls
-- which
+- [ ] pwd
+- [X] cd
+- [ ] ls
+- [ ] which
 
 **** 11. What is the size of the =float= data type on a 64-bit machine?
 
-- 1 byte
-- 2 bytes
-- 4 bytes
-- 8 bytes
+- [ ] 1 byte
+- [ ] 2 bytes
+- [X] 4 bytes
+- [ ] 8 bytes
 
 **** 12. What information do the =printf= statements tell us about how our code is executed?
 
@@ -230,11 +230,11 @@ Let's add =printf= statements to the code.
 What information do the =printf= statements tell us about how our code
 is executed? (select all valid statements)
 
-- A =printf= statement shows when the for loop is finished
-- A =printf= statement shows exactly how many times the loop executes
-- =printf= statements shows that break will cause "For loop exited" to
+- [X] A =printf= statement shows when the for loop is finished
+- [ ] A =printf= statement shows exactly how many times the loop executes
+- [X] =printf= statements shows that break will cause "For loop exited" to
   print, indicating that the even number is never printed
-- A =printf= statement shows that there is an infinite loop in the code
+- [ ] A =printf= statement shows that there is an infinite loop in the code
 
 **** 13. What does this code print?
 
@@ -262,6 +262,6 @@ is executed? (select all valid statements)
   }
 #+end_src
 
-- The =n= times table, starting with 0
-- The =n= times table, excluding zero
-- The numbers 0 to =n=, =n= times
+- [X] The =n= times table, starting with 0
+- [ ] The =n= times table, excluding zero
+- [ ] The numbers 0 to =n=, =n= times
