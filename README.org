@@ -1,12 +1,19 @@
 #+TITLE: ALX Evaluations
 #+AUTHOR: Mubarek Seid (MSD)
+#+EMAIL: (concat "mubareksd" at-sign "gmail.com")
 #+DESCRIPTION: Questions and Answers for ALX Evaluations.
+#+KEYWORDS: alx, alx evaluation, c, python, shell, bash
+#+LANGUAGE: en
 
 - [[./ev_0.org][Evaluation #0]]
 - [[./ev_1.org][Evaluation #1]]
 - [[./ev_2.org][Evaluation #2]]
 - [[./ev_3.org][Evaluation #3]]
 - [[./ev_4.org][Evaluation #4]]
+- [[./ev_5.org][Evaluation #5]]
+- [[./ev_6.org][Evaluation #6]]
+- [[./ev_7.org][Evaluation #7]]
+- [[.ev_8.org][Evaluation #8]]
 
 ** License
 
