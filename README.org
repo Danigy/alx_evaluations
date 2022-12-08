@@ -14,7 +14,3 @@
 - [[./evaluation_6.org][Evaluation #6]]
 - [[./evaluation_7.org][Evaluation #7]]
 - [[./evaluation_8.org][Evaluation #8]]
-
-** License
-
-[[https://www.gnu.org/graphics/gplv3-127x51.png]]
